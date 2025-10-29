@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h2>Demostración de Output en Javascript</h2>
+    <button id="boton1" onclick="motrarAlerta()" >Click me!</button>
+    <p id="parrafo"></p>
+    <button id="boton2" onclick="CambiarParrafo()">Click me 2!</button>
+    <script>
+        function motrarAlerta() {
+            alert("¡Hola! mi nombre es Angel!.");
+        }
+        function CambiarParrafo() {
+            document.getElementById("parrafo").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+        window.onload = function() {
+        console.log("La página ha terminado de cargarse completamente :)");
+        };
+    </script>
+</body>
+</html>
